@@ -1,0 +1,28 @@
+###################################Logarithm########################################
+
+-in coding log base 2 is used
+
+-as n doubles output y increases by 1
+
+
+-logb(x) = y iif b^y = x
+-log2(x) = y iif 2^y = x
+
+-video demonstrates why logarithm is such an important concept
+
+-log(N) = y iif 2^y = N
+
+-log(1) = 0 bc 2^0 = 1
+
+**O(log(N)) is a better complexity than O(N)
+
+-example of O(log(N)):
+-an array of [0,1,2,3,4,5,6,7] gets cut in half with each operation
+*[0,1,2,3,4,5,6,7] => [0,1,2,3] => [0,1] +> [0]
+
+-example 2:
+-binary tree gets cut in half with each operation (same as array except with balanced binary tree)
+
+-balanced binary tree = every parent has 2 children
+
+####################################################################################
