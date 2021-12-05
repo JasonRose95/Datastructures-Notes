@@ -1,0 +1,81 @@
+######################################Big-O-Notation################################
+
++How do we measure complexity? = 
+-Big O notation
+
+-if we had an array of size N=1
+*functions would execute almost instantly
+
+-as N gets larger a[0] would run almost the same, sum would be slower, 
+and nested for loop would be slower
+
+-if we had N= 1 million
+*a[0] would run almost the same
+*sum would take a couple seconds 
+*nested for loop would take forever
+
+-b/c of variance it would not make sense to describe time complexity in
+exact seconds
+**we use Big O Notation
+
+-we can see that some functions are very dependent on size of input
+*as input grows it can be affected more and more
+
+-we want to know how fast an algorithm is as input increases
+
+-f1(a) => 1 +a[0] is O(1)
+-f2(a) => sum(a) is O(N)
+-f3(a) => pair(a) (nested for loop) is O(N^2)
+^time complexity
+
+-time complexity = change in speed of function as size of function increases
+*(asymptotic analysis (if infinity))
+^f(n) n->∞
+
+-O(1) represents elementary operation (constant time)
+*there is no relation to size of input and speed of output
+^O(8) gets simplified to O(1)
+^32bit int + 32bit int = 8 bytes
+
+-let f4(a) = f1(a)+f2(a)+f3(a)
+*f4 = O(N^2 + N +1)
+^gets simplified to O(N^2)
+
+-constants don't change as N changes, so we remove them
+*i.e. O(2N^2) becomes O(N^2)
+
+#################################Common-Examples####################################
+
+-O(1)
+-O(log(N))
+-O(N)
+-O(Nlog(N))
+-O(N^2),O(N^3),O(N^4) <= bigger exponents do cause slower output **significant
+-O(2^N)
+-O(N!)
+
+-i.e. O(N^4+N^2) get shortened to O(N^4)
+
+###############################More-Notes###########################################
+
+-Big O refers to worst case scenario
+
+-Different than Big Omega
+
+-examples:
+
+*O(25) => O(1)
+
+*O(2N) => O(N)
+
+*O(N^2 + 2N) => O(N^2)
+
+*O(N^3 +log(N) +3) => O(N^3)
+
+*O(N + M) => O(N + M)
+
+*O(M^2 +2N) => O(M^2 + N)
+
+*O(N! + log(M) + 2N + 3) => O(N! + log(M))
+
+####################################################################################

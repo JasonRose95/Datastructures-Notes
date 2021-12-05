@@ -31,12 +31,64 @@
 
 -1 slot = 8 bits = 1 byte
 
--binary number = base 2 system
+-binary number = base 2 system (can represent 2^8 data values = 256 potential data 
+values)
 
 -lookup binary system on wikipedia if confused
 
-##################################Memory-10 mins-in#################################
+##################################Memory-10-mins-in#################################
 
+-C++/Java type int = 32-bit integer
+*type long = 64-bit integer
+^under the hood, 32/8 = 4 bytes of memory for int. 
+**int would need 4 back to back memory slots 
+^long would use 8 bytes of memory.
 
+-endianness = order of bytes usually expressed as big-endian(BE) or
+little-endian(LE)
 
+-BE = stores most significant byte at smallest memory address and least significant
+at the largest (most significant first)
+-LE = stores least-significant byte at smallest address (least significant first)
 
+-32 bit always will take up 4 memory slots (constant number)
+
+-64 bit always will take up 8 memory slots (constant number)
+
+-list would be stored back to back
+*2 number int list would take 8 slots back to back
+i.e.[1,2] = 8 slots back to back
+i.e.[1,2,3] = 12 back to back slots we would need
+
+-ASCII = character mapping that assigns characters a number
+i.e. A = 65
+i.e. B = 66
+-so letter would turn into a number that would turn into a list of bits
+-so string would be stored in memory as bits
+
+-memory addresses stored in binary
+
+-could store memory address of another memory slot in memory slot
+i.e. memory slot "16" address could be stored in memory slot "12"
+*coceptually this would be a pointer to another memory address that has data
+that we need that can be far away
+
+##################################Memory-20-mins-in#################################
+
+-accessing memory slots can be done very quickly
+i.e. can access values in an array quickly (very inexpensive operation)
+
+-space complexity important = we can run out of memory
+
+-bit = short for binary digity
+
+-recap:
+*memory is bounded*
+*stored in base 2 format
+*1 slot = 1 byte
+*integer usually fixed width 32bit, 64bit
+*can use pointers
+*accessing memory slots = most basic operation (inexpensive in time)
+*memory stored in bytes and by extention bits
+
+####################################################################################
