@@ -1,0 +1,31 @@
+############################Complexity-Analysis#####################################
+
+-foundation of data structures
+
+-one problem can have multiple solutions (3 or 4)
+
+-some solutions are a lot better than others
+
+-better complexity means better solution
+
+-complexity = cs concept of time complexity and space complexity
+
+^space time complexity
+
+-time complexity = how fast an algorithm runs
+
+-space complexity = how much memory an algorithm takes
+
+-better solution = better time complexity or better space complexity
+
+^may depend on use-case of solution
+
+-figuring out which is better = comparing space time complexity
+
+-complexity analysis = figuring out the complexity of an algorithm
+
+-must be familiar with all the space time complexities of popular algorithms
+
+-solutions ideally should be fast and require low memory usage 
+
+####################################################################################

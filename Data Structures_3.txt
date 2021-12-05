@@ -1,0 +1,42 @@
+##################################Memory############################################
+
+-foundational knowledge of memory is important too
+
+-we want to understand (when we write code) how things work under the hood
+*i.e. writing variables
+
+-memory is a large topic, we will simplify a lot of things
+
+^this makes video relevant to interviews
+
+- we declare variables then use them later on in code
+*variable has to be stored
+
+-bounded (memory) canvas = finite(limited) number of (memory) slots
+
+^if all slots are taken, there would be no available slots
+**we want to take up less memory if possible
+
+-making new variable = variable will be stored in memory canvas
+**one memory slot will be taken up(not free anymore)
+^or series of memory slots will be taken up
+
+-will always be stored in memory slot that is free (not taken up)
+
+-if more than one block needed, it will be stored in back to back memory slots
+
+-memory = made of bits = 0s and 1s
+
+-computer only understands 0s and 1s
+
+-1 slot = 8 bits = 1 byte
+
+-binary number = base 2 system
+
+-lookup binary system on wikipedia if confused
+
+##################################Memory-10 mins-in#################################
+
+
+
+
