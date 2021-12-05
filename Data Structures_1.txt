@@ -1,0 +1,24 @@
+##########################What Are Data Structures?#################################
+
+-simple concept needed for coding interview
+
+-coding = manipulating data to accomplish something
+*i.e. requests, transforming, displaying, storing, retrieving, returning
+
+-data structures = organizing & managing data
+*i.e. emails are a datastructure organized in vertical list w/ folders
+can be managed in order recieved
+
+^code organizes and manages data in emails
+
+-data structure = collection of data values, relationships among them, and
+functions/relations that can be applied to them
+
+-we can look for, insert, remove, and add numbers to datastructures
+
+-different data structures have different relations and functions
+
+-be well versed in popular data structures to know relationships, functions,
+benefits/downsides that all data structures have
+
+####################################################################################
