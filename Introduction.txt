@@ -1,0 +1,22 @@
+################################Introduction########################################
+
++Why?
+-Test to see if candidate is a good problem solver?
+
+-Don't require much theoretical knowledge 
+i.e. medicine (lots of knowledge)
+
+-Two types of knowledge:
+*some foundation in coding
+*datastructures
+
+^entire fields on how datastructures relate to algorithms
+
+-foundational datastructures (course will teach everything we need to know about
+foundation of datastructures)
+
+-datastructures = building blocks of tackling coding interviews
+
+-questions = how to apply knowledge of datastructures
+
+####################################################################################
