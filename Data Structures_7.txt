@@ -1,0 +1,88 @@
+###################################Linked-Lists#####################################
+-important for lots of interview questions and basis of other datastructures
+
+-linked list => similar to array (conceptually)
+^stored in memory different
+
+-singly linked list = every value has one pointer
+*most basic for of linked list
+*i.e. 3 -> 1 -> 4 -> 2
+*ordered left to right like an array (conceptually)
+
++How is a linked list stored in memory?
+-stored as nodes with a value and a pointer
+*first value and pointer would be back to back
+*other nodes would be anywhere in memory as long as value and pointer
+are back to back
+*last memory slot in node indicates that is the last value so operating system
+knows it doesn't have to go anywhere
+
+
+-linked list operations:
+*finding value at index => reference is to first node (head of linked list)
+^i.e. head is 3 in linked list 3 -> 1 -> 4 -> 2 -> null
+**finding value at index requires traversing entire linked list
+*get => O(i)T where i = index, O(1)S
+-set => O(i)T, O(1)S
+-init=>O(N)ST, the more elements the more time and space it takes
+*memory must be allocated depending on number of elements and time increases
+with more elements
+-copy => O(N)ST (traversing entire linked list and allocating 2N more memory slots)
+-traverse => O(N)T O(1)S (going through all N nodes but not allocating memory)
+-insertion => O(1)ST to insert at head, if middle must traverse list till we get
+to the node but do not need to reassign indices (only one pointer must be swapped)
+**still O(1)ST due to not having to shift every element (same as if at end of
+linked list if var is assigned to it)
+*i.e. 5 is inserted to 3 -> 1 -> 4 -> 2 so the list is 5 -> 3 -> 1 -> 4 -> 2 
+*i.e. 6 is inserted to 3 -> 1 -> 4 -> 2 so list is 3 -> 1 -> 6 -> 4 -> 2
+-deletion => same as insertion for space time complexity
+*O(1)ST at beginning 0(N) T at middle and 
+end depends if stored in var or not O(1)/O(N)
+
+-end of linked list is called tail, beginning is called head
+*can make variable that points to tail of list, so setting a new tail (insertion) 
+would beconstant time. Otherwise O(p) time due to having to traverse entire
+linked list. p = position
+
+##################################Doubly-linked-list################################
+
+-doubly linked list => every node has two pointers
+*one points to the next node, one points to the previous node
+*head and tail would have one pointer that points to null value b/c they
+only has one node next to them
+
+-similar to singly linked list except with two pointers
+
+- in memory, it would have a second pointer pointing to previous node
+* i.e. null<-3 <-> 1 <-> 4 <-> 2 -> null
+
+-node that points from one node to another => called *next* pointer
+-node class usually has next and prev (previous)
+
+-node would take up multiple memory slots so value and pointer(s) would be
+back to back
+*however a value and its pointer(s) could be stored anywhere as long as 
+they are back to back
+-value + pointer(s) = node
+-nodes that can be stored anywhere are connected through pointers
+making them different than arrays
+-all the nodes don't have to be back to back
+-whereas values in an array have to all be stored back to back
+
+-doubly linked list allow traversing forward/backwards from the tail to the head
+-singly linked list => can only traverse from head to tail 
+
+-can mutate linked list to add third pointer per node,
+make circular where tail points to head or head points to tail,
+can do whatever is needed depending on usage for linked list
+
+-tougher to manipulate than arrays b/c arrays are built into
+all programming languages
+
+-class for linked list usually has to be implemented,
+and has many nuances involving the pointers
+and inserting/deleting nodes at given places in linked list, etc.
+^covered in questions for algorithmns
+
+####################################################################################
+
