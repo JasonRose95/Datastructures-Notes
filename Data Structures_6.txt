@@ -1,0 +1,27 @@
+###################################Arrays###########################################
+-discuss array functions, how they are stored in memory, and BigO
+
+-stored back to back
+*3 64 bit numbers = 24 slots back to back
+^64 bit is 8 bytes each
+
+-Two types of arrays:
+*static and dynamic arrays
+
+-Static arrays have a fixed number of memory slots
+*seen in C++ and java
+
+-operations of array:
+*array[2] = very basic almost instant O(1)
+
+-operating system finds start of memory slot then find index specified
+by adding how many bytes is needed to starting address
+*i.e. if slot 3 is the first memory slot used we can add 8 to it
+to find the second 64 bit number in an array
+
+-array[2] = 5
+^setting is similar to getting
+*can find the address quickly and override with new binary numbers
+**constant time and constant space O(1)
+
+-init => O(8*N) making array of certain length
