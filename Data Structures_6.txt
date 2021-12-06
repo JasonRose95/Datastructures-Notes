@@ -1,5 +1,9 @@
 ###################################Arrays###########################################
 -discuss array functions, how they are stored in memory, and BigO
+-should understand why arrays work the way they do
+*how element at an index can be accessed so fast
+*how elements can be inserted at end of an array so fast
+*arrays are one of the best data structures if used properly
 
 -stored back to back
 *3 64 bit numbers = 24 slots back to back
@@ -25,3 +29,77 @@ to find the second 64 bit number in an array
 **constant time and constant space O(1)
 
 -init => O(8*N) making array of certain length
+*this means init is O(N) time complexity
+
+##########################space-time-complexity-for-arrays##########################
+
+-get => O(1) ST
+-set => O(1) ST
+-init => O(N) ST
+-traverse O(N) T, O(1) S
+^where S is space and T is time
+
+-traverse = filter, map, etc
+
+-copy => O(N) ST (traversing existing array + finding new available memory slots)
+
+-insert => would have to shift entire array so that an additional 8
+back to back memory slots would be available for new 64 bit int
+^under the hood the entire array would have to be copied
+**N operations would be preformed
+*insert => O(N)T O(1)S (copies to new array, then old one gets wiped
+so space is O(1))
+^this is for static arrays, exception is dynamic array
+
+-Dynamic array => an array that can change in size
+^under the hood, insertions can be faster 
+*C++ and Java = vecors, array lists
+*Python and Javascript = standard arrays are dynamic arrays
+
+-Dynamic arrays usually delegate twice as much memory as what is asked
+*i.e. [1,2,3] would be stored [1,2,3,_,_,_] and have room for 3 more long ints
+
+-Dynamic array allocates double the space needed
+*fast insertions until space exhausted
+**insertion causes copy that has double the space needed when space is exhausted
+*so, the array will give twice as much space and when that space is full
+it will be copied like a static array would be except the new array
+will also have double the space (and the old one still gets wiped)
+
+-this means that inserting to a dynamic array can be O(1) or O(N) time depending
+on if space is available or if array has to be copied
+**time is O(1)T, because doubling occurs at O(1) + O(2) + O(4) + ...+ O(N)
+-this means doubling is written as N + N/2 + N/4 + N/8 + ...1
+^this series converges to 2N
+-insertions are O(2N) for copying and every other insertion is O(1)
+**insertions are O(N) for copying but it gets canceled out by all the
+other insertions
+*This is known as Amortized Analysis
+-Amortized Analysis => accounts for edge cases(that take a lot
+of time) and easy cases(that don't take a lot of time)
+
+-In coding interview, inserting an element to the end of a dynamic array is O(1)T
+*may be possible, that they mention worst case scenario and hint that they
+want to test on knowledge of insertion (hinting that problem is O(N)T)
+^highly unlikely
+
+-inserting to middle/beginning of  dynamic array => still O(N) time, b/c indices 
+must be shifted by 1
+
+-pop(removing from end) => O(1) ST
+-pop(removing from beg/mid) => O(N) all indices are shifted
+^called shift in JS
+
+-In some questions, pop is used at index 0 and is assumed to be constant time
+^in a select few problems, arrays are treated as queues built on top of linked lists
+*incorrect but making assumption that array is treated as a queue
+**algorithm is assessing something else not pop of array
+-(algo expert is cutting corners in these cases to get to meat of problem)
+
+-If operation affects half of array or even quarter of array still counts as 
+O(N) operations
+*if inserted to middle only some of the values have to shift, still O(N) due to
+length of array being able to increase and operations increasing as length
+increases
+
+####################################################################################
