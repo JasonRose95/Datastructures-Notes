@@ -28,3 +28,26 @@
 *unless interviewer specifically mentions edge cases
 
 -hashing functions/hashing keys = constant time operation
+
+-worse case = each value is its only long linked list
+*we would need resizing(if underlying array doesnt have enough space)
+
+-we could implement a hashtable that resizes itself
+*if under the hood array runs out of room it could copy and double its size
+*all keys could go to new hashing function with new array size
+*key value pairs would be placed at different positions in new array
+
+-a big array could resize past a certain threshhold to make itself smaller
+
+-resizing = a way to avoid collision
+
+-resizing would occur very infrequently allowing us to maintain constant time insertion
+
+-init => O(N)ST
+
+-keys don't have to be strings, need values that can be passed into hashing function
+and turned into integers
+
+-some built in hashtables allow other datatypes other than strings and its for values
+
+####################################################################################
