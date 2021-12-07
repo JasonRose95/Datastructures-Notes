@@ -1,0 +1,50 @@
+######################################Strings#######################################
+
+-strings usually thought of as datatype yet they do behave as datastructures
+
+-they have space/time implications when manipulated
+
+-particualarly tricky b/c implimentation is diff for diff languages
+
+-string usually stored in memory as an array of integers
+*character encoding standards like ASCII allow us to map in this way
+
+-ASCII characters = 1 byte or 8 bits to store (each)
+*good for english characters
+
+-single character operations in a string = O(1)T
+
+-functions for strings:
+*traverse => O(N)T, O(1)S
+copy => O(N)ST
+get => O(1)ST
+
+-in some languages C++ strings are mutable(characters can be added to them)
+-in other languages python,java,JS,C# strings are immutable)(cannot be altered)
+*must copy the string and make a new string
+
+-in languages where strings are immutable using += or like operators
+causes a new string to be made, values are copied from the old
+string and added to the new string.
+**appending a value to a string is not a constant time operation
+*appending =>O(N)T operation
+*concatenating => O(N + M) operation
+
+-some methods allow string to be split into individual chars O(N)T
+*then values can be appended in constant time O(1)
+*then values can be reconcatenated into one string O(N)T
+^this is more efficient timewise than if all operations were O(N)T,
+b/c most of the operations would be O(1)
+^^good for immutatable strings
+
+-there is no set at index method for immutable strings, string cannot be altered
+*closest thing is += which is O(N) operation
+
+-finding substring in string, replacing a substring in a string are usually
+built into the language we are using
+
+-very important to know about mutability of strings, especially if the language
+used is one where strings are immutable
+
+####################################################################################
+
