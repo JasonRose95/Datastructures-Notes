@@ -1,0 +1,73 @@
+##################################Trees#############################################
+-Binary Trees
+
+-Tree is a type of graph
+
+-Graph theory => very complex subject area
+
+-In coding interviews, trees are quite simple
+
+-Root node => top node
+
+-child nodes => nodes below
+
+-directed structure => usually point downward in tree
+*i.e. top to bottom
+
+-acyclic => does not have cycles (not allowed in tree)
+*would become normal graph
+
+-each node can only have one parent
+
+-cannot be disconnected or we would have two different trees
+
+-Types of trees:
+
+*binary tree=> normal tree, where every node has at most two child nodes
+
+*ternary tree => each node has at most three child nodes
+
+*k-ary trees => each node has at most k child nodes
+
+*Binary search trees(BSTs)
+
+*Heaps(min/max heaps) => typically binary
+
+*Tries => usually stores characters in a string
+
+-Most trees dont have pointers from child to parent but we can have them
+if we want
+
+-storing a tree is O(N) S
+*Where N is the number of nodes in tree
+
+-traversing all N nodes in tree => O(N) T
+
+-traversing through one of two subtrees(for binary tree) => O(log(N)) T
+^if balanced binary tree
+*if tree is skewed, time complexity would be different
+
+-balance => maintains log(N) time complexity for traversing one of two subtrees
+every time
+*roughly even on both sides of the tree
+
+-unless guaranteed that tree is balanced, must state that it is only log(N)
+on average
+*worst case is O(N) time
+
+-Vocabulary:
+*branch => any path that starts at the root node and ends at a bottom node
+*leaf node => bottom node
+*level => every level in a tree
+^in a family tree, parents would be a level, sibiling would be level below
+*complete tree => every level is full, and final level can be partially empty
+but must be filled left to right
+*full => if every node in a tree has no children nodes or k children nodes
+*in a k-ary tree
+*perfect tree => all leaf nodes have same depth
+*depth/height => how far down a tree goes(number of levels in a tree)
+
+-a full tree does not have to be a complete tree
+-a complete tree does not have to be a full tree
+
+####################################################################################
