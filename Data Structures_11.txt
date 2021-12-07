@@ -1,0 +1,64 @@
+###################################Graphs###########################################
+
+-Graph = collection of nodes that may or may not be connect to one another
+*elements in a graph are nodes called vertices
+
+-every element is a vertex
+
+-connections in a graph are called edges
+
+-graph => made up of vertices and edges
+
+-connected = if there is some path between any two vertices in a graph
+*i.e. the graph is connected in a sense of a topological space
+meaning there is a path from any pooint to any other point in the graph
+
+-disconnected = there is an "island" (#comment)
+
+-graph theory = some graphs are directed, edges in graphs are directed
+*in an undirected graph, edges would not have directions
+(i.e. undirected = facebook friends are mutual, if you are their friend
+they are your friend)
+
+-cycle = cyclic graph
+-no cycles = acyclic graph
+
+-def of cycle = very complicated online,
+if at any point in a graph there are three or more vertices that cause an
+infinite loop, there is a cycle!
+
+-if you end up at a node you already visited when traversing a graph and going
+down connections in a graph, that means there is a cycle in the graph
+i.e. wikipedia graph system
+
+-we want to avoid infinite loops (cycles) by marking them already visited somehow
+
+-must connectivity, direction, and cycles must be known for coding interviews
+
+-2D array => graph structure where we care about nodes above below left and right
+
+-if we had a string and wanted to replace every letter and see what result was=>
+could lead to graph structure abc-> abx abc-> xbc abc ->axc
+
+-important to recognize when we can transform certain problems into a graph problem
+
+-adjacency list = term used to represent a graph in code, can store a list of nodes,
+where every node stores a list of its adjacencies (or adjacent nodes)
+
+-V = number of vertices
+-E = number of edges
+
+-space complexity for storing graph => O(V+E) 
+-traversing graph = depth first search(DFS), breadth first search(BFS)
+
+-DFS = explore all edges of one vertex, then move to the next vertex
+*i.e. deep first, then wide
+
+-BFS = going wide first
+
+-traverse => O(V+E) time complexity
+
+-adding edges/verticies are usually very specific to problem at hand
+**they are not covered yet
+
+####################################################################################
