@@ -1,0 +1,46 @@
+##################################Stacks-and-queues#################################
+
+stack = data structure that allows adding and removing using LIFO principle
+*LIFO = last in first out
+*i.e. stack of books piled on a table
+
+queue = follows FIFO princicple
+*FIFO = first in first out
+i.e. line of people
+
+-stack is a list of elements added in some order that follows LIFO
+-queue is also a list of elemenets yet it follows FIFO
+
+-stacks and queues support constant space time addition and deletion O(1)ST
+
+-stack is basically a dynamic array under the hood where we append and pop elements
+*at least it can be implemented using a dynamic array under the hood
+
+-cant add elements to the stack that arent at the top of the stack
+*must be added to the top
+
+-queue is implemented with a linked list where we keep track of head and tail
+*enqueue => insertion method of queue
+*could add new head to linked list by replacing pointer
+*dequeue => deleting method of queue
+*could delete tail using reference and remove pointer to have new tail
+-tail must have a reference in linked list (so we can find it without
+traversing linked list.
+
+-methods for add/del for queue => push/pop
+
+-could simplify queue in interview using an array(although incorrect) in effort
+to save time. make sure to mention that we would usually be implementing a linked
+list
+
+-Add/del for both queue and stack are constant space time (recap)
+
+-O(N) space to store
+
+-search => O(N)T O(1)S
+
+-init => O(1)ST usually we initialize an empty stack (still O(N) to store)
+
+peek => constant space time (look at top element of stack/next element of queue)
+
+####################################################################################
