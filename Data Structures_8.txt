@@ -1,0 +1,30 @@
+###################################Hash-Tables######################################
+
+-key/value stores
+
+-can access value given key
+
+-in java = objects, python = dictionaries
+
+-inserting, deleting, searching are constant time
+
+-hash tables are built ontop of arrays
+*under the hood, there is an underlying array
+*hash function transforms string into index that its mapping to
+
+-can map string to ASCII code then sum integers to one int
+*then modulo is used to get a number between 0 and length of arrray - 1
+
+-under the hood, each index maps to a linked list of potentional values
+
+-two keys that map to the same index = collision
+*this complicates looking up value for keys
+*every node in linked list would point back to original key
+**hashmaps on average support constant time, in the worst case they can be O(N) time
+ 
+-powerful hashing function minimize number of collisions
+
+-in interviews hashmaps are generally O(1) time
+*unless interviewer specifically mentions edge cases
+
+-hashing functions/hashing keys = constant time operation
